@@ -1,0 +1,70 @@
+{% extends 'base.html'%}
+
+{% block title %} | Bienvenue {% endblock %}
+
+{% block content %}
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Bienvenue Sur Votre Plateforme Eco Citoyen </h1>
+    <p class="lead">Espace Eco Citoyen (développement durable, gestion des ressources naturelles, changements climatique, efficacité énergétique, transition énergétique, gouvernance et participation citoyenne/ décentralisation et démocratie locale, économie verte, transformation des déchets en opportunité économique, finance éthique, production durable, consommation durable et responsable, économie sociale et solidaire, lutte contre la pauvreté, santé préventive et couverture maladie universelle, habitat et cadre de vie durable, éco geste et vie quotidienne, éco mobilité, éco ville, lectures écocitoyennes,….</p>
+    <a class="btn btn-secondary" href="{% url 'about' %}" role="button">Plus d'Infos</a>
+  </div>
+</div>
+
+<!-- Alerts -->
+{% include 'partials/_alerts.html' %}
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Nouvelle Demande</h5>
+        <p class="card-text">Soumettre une demande sur SENPROBLEME.</p>
+        <a class="btn btn-Secondary" href="{% url 'Nvdemande' %}" role="button">Soumettre</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Status de la demande </h5>
+        <p class="card-text">Consulter le status de votre demande.</p>
+        <a class="btn btn-Secondary" href="{% url 'suivi' %}" role="button">Consulter</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<section id="services" class="py-5 bg-secondary text-white">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <i class="fas fa-comment fa-4x mr-4"></i>
+          <hr>
+          <h3>Nos Services</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, debitis nam! Repudiandae, provident iste consequatur
+            hic dignissimos ratione ea quae.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-home fa-4x mr-4"></i>
+          <hr>
+          <h3>Adresse</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, debitis nam! Repudiandae, provident iste consequatur
+            hic dignissimos ratione ea quae.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-hands-helping fa-4x mr-4"></i>
+          <hr>
+          <h3>Partenaire</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, debitis nam! Repudiandae, provident iste consequatur
+            hic dignissimos ratione ea quae.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+{% endblock %}
