@@ -35,8 +35,52 @@
             <br>
             <hr>
             {% csrf_token %}
-            {{ form.media }}
-            {{ form|crispy }}
+            <!-- {{forms|crispy}} -->
+            <div class="row">
+              <div class="col-6">
+                {{ form.nom|as_crispy_field }}
+              </div>
+              <div class="col-6">
+                {{ form.prenom|as_crispy_field }}
+              </div>
+              <div class="col-6">
+                {{ form.adresse|as_crispy_field }}
+              </div>
+              <div class="col-6">
+                {{ form.ville|as_crispy_field }}
+              </div>
+              <div class="col-6">
+                {{ form.telephone|as_crispy_field }}
+              </div>
+              <div class="col-6">
+                {{ form.email|as_crispy_field }}
+              </div>
+              <div class="col-6">
+                {{ form.plainte|as_crispy_field }}
+              </div>
+
+              <div class="col-6">
+                {{ form.autre|as_crispy_field }}
+              </div>
+              <div class="col-6">
+                {{ form.suggestion|as_crispy_field }}
+              </div>
+              <div class="col-6">
+                {{ form.secteur|as_crispy_field }}
+              </div>
+              <div class="col-6">
+                {{ form.ministere|as_crispy_field }}
+              </div>
+              <div class="col-6">
+                {{ form.service|as_crispy_field }}
+              </div>
+              <div class="col-6">
+                {{ form.message|as_crispy_field }}
+                {{ form.media }}
+              </div>
+
+
+            </div>
             <button type="Submit" class="btn btn-success"><i class="fas fa-server"></i>Envoyer</button>
           </form>
         </div>

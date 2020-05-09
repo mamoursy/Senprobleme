@@ -15,27 +15,32 @@
 <!-- Alerts -->
 {% include 'partials/_alerts.html' %}
 
-<div class="row">
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Nouvelle Demande</h5>
-        <p class="card-text">Soumettre une demande sur SENPROBLEME.</p>
-        <a class="btn btn-Secondary" href="{% url 'Nvdemande' %}" role="button">Soumettre</a>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Nouvelle Demande</h5>
+          <p class="card-text">Soumettre une demande sur SENPROBLEME.</p>
+          <a class="btn btn-Secondary" href="{% url 'Nvdemande' %}" role="button">Soumettre</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Status de la demande </h5>
+          <p class="card-text">Consulter le status de votre demande.</p>
+          <a class="btn btn-Secondary" href="{% url 'suivi' %}" role="button">Consulter</a>
+        </div>
       </div>
     </div>
   </div>
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Status de la demande </h5>
-        <p class="card-text">Consulter le status de votre demande.</p>
-        <a class="btn btn-Secondary" href="{% url 'suivi' %}" role="button">Consulter</a>
-      </div>
-    </div>
-  </div>
+
 </div>
 
+<br>
 <br>
 
 <section id="services" class="py-5 bg-secondary text-white">
